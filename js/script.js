@@ -13,11 +13,11 @@ for (var i = 0; i < 100; i++) {
 for (var i = 0; i < 100; i++) {
   if (listaNumeri[i+1]%3 == 0 && listaNumeri[i+1]%5 != 0) {
     listaNumeri[i+1] = "Fizz";
-  } else if (listaNumeri[i+1]%5 == 0) {
+  } else if (listaNumeri[i+1]%5 == 0 && listaNumeri[i+1]%3 != 0) {
       listaNumeri[i+1] = "Buzz";
     } else if (listaNumeri[i+1]%3 == 0 && listaNumeri[i+1]%5 == 0) {
       listaNumeri[i+1] = "FizzBuzz";
     }
-    // Stampo nell'html il contenuto degli array dopo le sostituzioni Fizz e Buzz
-    document.getElementById('listaNumeri').innerHTML += "<li>" + listaNumeri[i+1] + "</li>";
+  // Stampo nell'html il contenuto degli array dopo le sostituzioni Fizz e Buzz
+  document.getElementById('listaNumeri').innerHTML += "<li>" + listaNumeri[i+1] + "</li>";
 }
