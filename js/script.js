@@ -1,4 +1,4 @@
-// Esercizio FizzBuzz JS
+// // Esercizio FizzBuzz JS
 
 // Dichiarazione variabili
 var listaNumeri = [];
@@ -21,3 +21,17 @@ for (var i = 0; i < 100; i++) {
   // Stampo nell'html il contenuto degli array dopo le sostituzioni Fizz e Buzz
   document.getElementById('listaNumeri').innerHTML += "<li>" + listaNumeri[i+1] + "</li>";
 }
+
+// BONUS - Versione senza array
+
+// for (var i = 1; i < 100; i++) {
+//   if (i%3 == 0 && i%5 != 0) {
+//     console.log("Fizz");
+//   } else if (i%5 == 0 && i%3 != 0) {
+//     console.log("Buzz");
+//   } else if (i%5 == 0 && i%3 == 0) {
+//     console.log("FizzBuzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
